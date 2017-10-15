@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+<defs>
+  <radialGradient id="radial">
+    <stop offset="0%" style="stop-color:#e02020" />
+    <stop offset="100%" style="stop-color:orange" />
+  </radialGradient>
+</defs>
+
+  <circle r="50%" cx="50%" cy="50%" fill="url(#radial)" />
+  <text font-weight="bold" font-size="4" x="5%" y="65%" fill="#fee">
+    <tspan>M</tspan>
+    <tspan dx="-3" fill="#ffe" font-size="24">G</tspan>
+    <tspan dx="-3">M</tspan>
+    <tspan dx="-18" dy="6" font-size="6" fill="aqua">OS</tspan>
+  </text>
+
+</svg>
