@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 
 function myTime(){
     'use strict';
@@ -29,7 +27,7 @@ document.getElementById('start').onclick = function(){
     'use strict';
     document.getElementById('startMenu').classList.toggle('hide');
 };
-=======
+//==============
 var hours = new Date().getHours(),
     minites = new Date().getMinutes(),
     day = new Date().getDay(),
@@ -41,4 +39,4 @@ window.onload = function(){
     'use strict';
     box.textContent = day + "/" + month + "/" + year;
 }
->>>>>>> a0b719a8296f92dceb3d231e12528a225704b0b0
+

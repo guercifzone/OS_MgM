@@ -24,7 +24,7 @@ scrolltitle();
 </script>
 </head>
 <body>
-<div class="header" onmouseover="document.getElementById('hidebar').style.display = 'block';" onmouseleave="document.getElementById('hidebar').style.display = 'none';" >
+<div class="header" onmouseover="document.getElementById('hidebar').style.display = 'block';" onmouseleave="document.getElementById('hidebar').style.display = 'none';" ></div>
 <div id="hidebar">
     <ul id="menu">
 		<li><a id="internet"><img src="./icon/Browser.png"></a></li>
@@ -38,12 +38,12 @@ scrolltitle();
 		<li><a id="webcam"><img src="./icon/webcam.png"></a></li>
 	</ul>
 </div>
-</div>
+
 <div class="desktop">
-<span id="move" >
+<div id="move" >
 	<img src="img/thispc.png" /><br />
 	<span>Computer</span>
-</span>
+</div>
 <script src="app/moving.js"></script>
 <div id="mp3">
 <img class="close" src="img/close.png" onclick="document.getElementById('mp3').style.display = 'none';">
@@ -61,6 +61,7 @@ input.onchange = function(e){
   }
 }
 </script>
+<script src="app/Internet.js"></script>
 </div>
 <div id="startMenu" class="startMenu hide">
 	<input type="search" placeholder="&#xf002; Search file" autofocus />
@@ -70,27 +71,39 @@ input.onchange = function(e){
 </div>
 </div>
 	<div id="footer">
-		<div id="battery">
-			<div id="battery-level" class="charging plugged"></div>
-			<div id="battery-knob"></div>
+		<div id="start">
+			<img src="img/mgm_os_logo.svg" alt="Mgm Os Logo" class="fa fa-search" aria-hidden="true" onclick="document.getElementById('startMenu').style.display = 'block';" ondblclick="document.getElementById('startMenu').style.display = 'none';" />
+		</div>
+			<div id="battery">
+				<div id="battery-level" class="charging plugged"></div>
+				<div id="battery-knob"></div>
+			</div>
+			<div id="calendrier">
+				<i class="fa fa-calendar" id="calendarBtn"></i>
+			</div>
+			<div id="select_lang">
+				<select class="lang">
+					<option>EN</option>
+					<option>AR</option>
+					<option>FR</option>
+				</select>
+			  
+		</div>
+
+		 <div class="music" onclick="document.getElementById('mp3').style.display = 'block';">
+			<i class="fa fa-music" aria-hidden="true" ></i>
+		</div>	
+			<div id="status">
+			<img src="icon/yes_internet.png" id="yes_internet" style="height: 40px; width: 50px;">
+			<img src="icon/No_internet.png" id="No_internet" style="height: 40px; width: 50px; margin-left: -52px;">
+		 </div>
+		<p id="date">00:00 ~ 13/08/2017</p>
+		<script>
+			var d = new Date();
+			document.getElementById("date").innerHTML = d;
+			</script>
+
 	</div>
-		<span id="start"><img src="img/mgm_os_logo.svg" alt="Mgm Os Logo" class="fa fa-search" aria-hidden="true" onclick="document.getElementById('startMenu').style.display = 'block';" ondblclick="document.getElementById('startMenu').style.display = 'none';" /></span>
-
-  <span class="fl-r" >
-	<span><i class="fa fa-calendar" id="calendarBtn"></i></span>
-	<span>
-		<select class="lang">
-			<option>EN</option>
-			<option>AR</option>
-			<option>FR</option>
-		</select>
-	</span>
-
-	<span onclick="document.getElementById('mp3').style.display = 'block';"><i class="fa fa-music" aria-hidden="true" ></i></span>
-	<span id="date">00:00 ~ 13/08/2017</span>
-  </span>
-
-	
-	</div>
+		
 </body>
 </html>

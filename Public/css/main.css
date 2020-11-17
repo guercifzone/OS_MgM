@@ -61,7 +61,7 @@ body {
 
 
 #menu{
-	margin-left: 62px;
+	margin-left: 60px;
     padding: 0;
     list-style-type: none;
 }
@@ -135,10 +135,12 @@ width: 50px;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(255, 255, 255, 0.3);
 }
 
-
+.music{
+  margin: 43px 230px;
+}
 #footer span .fa { font-size: 24px; display: inline-block;margin: 10px}
 /*footer .fa:hover { cursor: pointer;}*/
-#start {border-right: 1px solid #080;margin: 0px 11px !important;}
+#start {border-right: 1px solid #080;margin:4px 2px !important;}
 .fa-windows {color: #8686f7;}
 
 span select.lang {
@@ -151,19 +153,13 @@ span select.lang {
 
 
 #date {
-    float: right;
-    height: 100%;
-    font-size: 14px;
-    padding: 4px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    color: #8686f7;
-    text-align: center;
-    cursor: default;
+  margin: 40px 308px;
 }
 /* End footer styles */
 
-
+#status{
+  margin: -72px 248px;
+}
 #mp3{
     height: 10em;
     width: 21em;
@@ -189,13 +185,14 @@ span select.lang {
  
 }
 #hidebar{
-  margin-top: 2px;
+  margin-top: -47px;
   background: linear-gradient(rgb(255 254 254 / 57%), #b5b5af);
   width: 41em;
-  height: 48px;
-  margin-left: 21%;
+  height: 44px;
+  margin-left: 27%;
   transition: 0.4s;
-	display: none;
+  display: none;
+}
 }
 #sound{
     margin-left: 1em;
@@ -230,16 +227,21 @@ span select.lang {
     color: #8686f7;
     font-size: 24px;
 }
-
+#calendrier{
+  margin: 43px 9em;
+}
+#select_lang{
+  margin: -62px 11em;
+}
 #battery {
-    position: relative;
-    top: 20px;
-    left: 84%;
-    margin: -11px -130px;
-    width: 50px;
-    border: 2px solid white;
-    border-radius: 7px;
-    height: 24px;
+  position: relative;
+  top: 16px;
+  left: 16%;
+  margin: -3em -10em;
+  width: 50px;
+  border: 2px solid white;
+  border-radius: 7px;
+  height: 24px;
 }
 #battery-level.low {
 			background-color: #e53d3d;

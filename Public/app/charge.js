@@ -11,7 +11,7 @@
 				$level.toggleClass('charging', !!status.charging);
 				$level.toggleClass('plugged', status.dischargingTime === Infinity);
 				$level.css({'width': level + '%'});
-				$level.toggleClass('low', level <= 20);
+				$level.toggleClass('low', level <= 70);
 			};
 
 			Battery.getStatus(updateStatus);
