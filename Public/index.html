@@ -9,7 +9,8 @@
 	<link rel="shortcut icon" type="image/x-icon" href="img/mgm_os_logo.svg" />
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<script type="text/javascript" src="lib_js/"></script>
+	<link rel="stylesheet" type="text/css" href="css/mp3.css">
+	<script type="text/javascript" src="lib_js/jquery_mp3.js"></script>
 	<!--<script type="text/javascript" src="app/background.js"></script>-->
 	<script> 
 title = "Mgm Os => Sadik Fattah || Mohssine Aboutaj :)   ";
@@ -46,21 +47,62 @@ scrolltitle();
 </div>
 <script src="app/moving.js"></script>
 <div id="mp3">
+	<img class="close" src="img/close.png" onclick="document.getElementById('mp3').style.display = 'none';">
+	<img src="" alt="" id="cover_url">
+<div class="player-holder">
+	<div class="player">
+		<div class="player-background">
+			<div class="pie spinner"></div>
+			<div class="pie filler"></div>
+			<div class="mask"></div>
+		</div>
+		<a href="#" class="action" title="play/pause">
+			<i class="icon-play"></i>
+			<i class="icon-pause"></i>
+		</a>
+	</div>
+	<div class="controls">
+		<a href="#" class="volume-show" title="Show Volume">
+			<i class="icon-volume-up-1"></i>
+		</a>
+		 <a href="#" class="playlist-show" title="Show Playlist">
+			<i class="icon-note"></i>
+		</a>
+		<div class="volume-holder">
+			<input id="volume" type="range" min="0" max="1" step="0.1" value="0.8" class="volume">
+			<a href="#" class="volume-icon normal" id="mute">
+				<i class="icon-volume-off-1"></i>
+				<i class="icon-volume-up-1"></i>
+			</a>
+		</div>
+		<div class="playlist-holder">
+			<div class="playlist-header">
+				<h4>My Playlist</h4>
+				<input id="fileInput" class="upload-list" type="file" webkitdirectory="" directory="">
+			</div>
+			<ul class="playlist">
+			</ul>
+			<a href="#" class="shuffle" title="Shuffle">
+				<i class="icon-shuffle"></i>
+			</a>
+			<a href="#" class="repeat" title="Repeat">
+				<i class="icon-repeat"></i>
+			</a>
+		</div>
+	 </div>
+	<!--Player bottom shadow -->
+	<div class="player-shadow"></div>
+	<div class="background-shadow"></div>
+</div>
+
+<audio id="player"></audio>
+</div>
+<!--
 <img class="close" src="img/close.png" onclick="document.getElementById('mp3').style.display = 'none';">
 <p style="font-family: Mo_Nowel; padding-left: 7em;color: white;">Load mp3 file</p>
 <input class="file" type="file" id="input"/>
-<audio id="sound" controls autoplay></audio>
-<script>	
-
-input.onchange = function(e){
-  var sound = document.getElementById('sound');
-  sound.src = URL.createObjectURL(this.files[0]);
-
-  sound.onend = function(e) {
-    URL.revokeObjectURL(this.src);
-  }
-}
-</script>
+<audio id="sound" class="" controls autoplay></audio>-->
+<script src="app/mp_3.js"></script>
 <script src="app/Internet.js"></script>
 </div>
 <div id="startMenu" class="startMenu hide">
