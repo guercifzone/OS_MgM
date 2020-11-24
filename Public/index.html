@@ -97,6 +97,7 @@ scrolltitle();
 
 <audio id="player"></audio>
 </div>
+
 <!--
 <img class="close" src="img/close.png" onclick="document.getElementById('mp3').style.display = 'none';">
 <p style="font-family: Mo_Nowel; padding-left: 7em;color: white;">Load mp3 file</p>
@@ -111,6 +112,7 @@ scrolltitle();
 <div class="calendar" >
 	<input type="date" id="calendar" autofocus />
 </div>
+
 </div>
 	<div id="footer">
 		<div id="start">
@@ -139,7 +141,9 @@ scrolltitle();
 			<img src="icon/yes_internet.png" id="yes_internet" style="height: 40px; width: 50px;">
 			<img src="icon/No_internet.png" id="No_internet" style="height: 40px; width: 50px; margin-left: -52px;">
 		 </div>
-		<p id="date">00:00 ~ 13/08/2017</p>
+		 <img src="icon/encrypt.png" alt="" class="encrypting_data"  onclick="let newWindow = open('encrypt.html','encrypting_data', 'width=800,height=500');">
+	
+		<p id="date"></p>
 		<script>
 			var d = new Date();
 			document.getElementById("date").innerHTML = d;
